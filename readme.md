@@ -1,3 +1,7 @@
+# Explanation #
+>There are two services. One service is that the port is open, which implies that anyone can respond to it. Another service is running, but the port is closed. When a user requests something, it's usually a GET request. So, when I access the external service port, which is 8081, I notice that my API is operational. Each and every container is isolated from each other and they only connected through bridge. No container communicates internally. I tried the follwing code and tried to find out the internal container IP and PORT number and and edit it to internalURL of index file.  
+
+
 # service to service Communication #
 > docker system prune -a
 > 
